@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examhall management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <!-- <a href="/mail">send Mail</a> -->
+    <div class="flex items-center justify-center bg-gradient-to-br from-red-200 via-purple-400 to-blue-400 w-1/2 h-1/2 p-10 border">
+    <form action="" method="post" class="flex gap-1 flex-col text-2xl">
+        {%csrf_token%}
+        <label class="flex justify-begin items-start" for="slot1">Slot_1</label>
+        <input class="border border-4 w-64" type="number" name="slot_1" id="slot1"> <br><br>
+        <label class="flex justify-begin items-start" for="slot2">Slot_2</label>
+        <input class="border border-4 w-64" type="number" name="slot_2" id="slot2"><br><br>
+        <label class="flex justify-begin items-start" for="day">Day  </label>
+        <input class="border border-4 w-64" type="text" name="day" id="day"><br><br>
+        <button class="bg-blue-400 p-4 rounded-xl text-white border" type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
